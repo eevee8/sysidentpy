@@ -16,6 +16,7 @@ def create_test_data(n=1000):
     # np.random.seed(42)
     # x = np.random.uniform(-1, 1, n).T
     # y = np.zeros((n, 1))
+    beta = 5;
     theta = np.array([[0.6], [-0.5], [0.7], [-0.7], [0.2]])
     # lag = 2
     # for k in range(lag, len(x)):
