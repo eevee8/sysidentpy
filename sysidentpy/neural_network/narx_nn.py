@@ -451,11 +451,7 @@ class NARXNN(BaseMSS):
                 self.val_loss.append(np.sum(np.multiply(losses, nums)) / np.sum(nums))
 
                 logging.info(
-                    "Train metrics: "
-                    + str(self.train_loss[epoch])
-                    + " | Validation metrics: "
-                    + str(self.val_loss[epoch])
-                )
+                    "Train metrics: %s | Validation metrics: %s", str(self.train_loss[epoch]), str(self.val_loss[epoch]))
         return self
 
     def predict(self, *, X=None, y=None, steps_ahead=None, forecast_horizon=None):
