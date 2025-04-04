@@ -4,6 +4,7 @@
 
 import pickle as pk
 import os
+import fickling
 
 
 def save_model(
@@ -67,6 +68,6 @@ def load_model(
 
     # Loading the model
     with open(file_name, "rb") as fp:
-        model_loaded = pk.load(fp)
+        model_loaded = fickling.load(fp)
 
     return model_loaded
