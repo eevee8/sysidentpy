@@ -1,10 +1,10 @@
-import random
 
 from numpy.testing import assert_equal
 
 from sysidentpy.metaheuristics import BPSOGSA
+import secrets
 
-random.seed(42)
+secrets.SystemRandom().seed(42)
 
 
 def test_validate():
